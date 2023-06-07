@@ -2,7 +2,10 @@ import styles from "./index.module.css";
 
 import { NavLink, useNavigate } from "react-router-dom";
 
+import { useCurrentPage } from "../../../context/currentPageContext";
+
 export default function Navbar() {
+  const pageCtx = useCurrentPage();
   const navigate = useNavigate();
 
   const NavStyles = ({ isActive }) => {
@@ -13,7 +16,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className={styles.header}>
+    <header id={pageCtx.currentPage} className={styles.header}>
       <div className={styles.logo} onClick={() => navigate("/")}>
         Adel Bedoud - Writing
       </div>

@@ -1,7 +1,27 @@
 import { createContext, useState, useContext } from "react";
 
-const currentPageContext = createContext({
-    currentPage: "",
-    changePage: (currentPage) => {},
+const CurrentPageContext = createContext({
+  currentPage: "",
+  changePage: (page) => {},
 });
 
+export function CurrentPageContextProvider({ children }) {
+  const [currentPage, setCurrentPage] = useState("home");
+
+  const changePageHandler = (page) => {
+    setCurrentPage(page);
+  };
+
+  const context = {
+    currentPage,
+    changePage: changePageHandler,
+  };
+
+  return (
+    <CurrentPageContext.Provider value={context}>
+      {children}
+    </CurrentPageContext.Provider>
+  );
+}
+
+export const useCurrentPage = () => useContext(CurrentPageContext);

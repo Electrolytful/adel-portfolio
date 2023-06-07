@@ -4,3 +4,15 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+#home {
+    background-color: var(--grey);
+}
+
+#aboutMe {
+    background-color: var(--white);
+}
+
+#getInTouch {
+    background-color: var(--white);
+}
