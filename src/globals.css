@@ -1,0 +1,18 @@
+/* gloabl css variables */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+:root {
+    /* colors */
+    --font-black: #000;
+    --font-grey: #6D6D6D;
+    --white: #fff;
+    --grey: #E5E5E5;
+
+    /* fonts */
+    --font: 'Space Grotesk', sans-serif;
+
+    /* font sizes */
+    --small-font: 1rem;
+    --med-font: 1.25rem;
+    --large-font: 1.5rem;
+}
