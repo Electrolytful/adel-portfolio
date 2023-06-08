@@ -1,0 +1,44 @@
+@import '../../globals.css';
+
+.profile {
+    font-family: var(--font);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: max-content;
+}
+
+.profile img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile h2 {
+    font-size: var(--x-large-font);
+    font-weight: normal;
+}
+
+.profile h3 {
+    font-size: var(--large-font);
+    color: var(--font-grey);
+}
+
+.profile ul li {
+    font-size: var(--large-font);
+    color: var(--font-grey);
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.icons > * {
+    transition: all .2s ease-out;
+    cursor: pointer;
+}
+
+.icons > *:hover {
+    transform: scale(1.2);
+}
