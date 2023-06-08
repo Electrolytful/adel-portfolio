@@ -1,0 +1,47 @@
+@import '../../../globals.css';
+
+.footer {
+    width: 100%;
+    height: 25vh;
+    background-color: var(--grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font);
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 15%;
+    color: var(--font-grey);
+}
+
+.navlinks {
+    margin-right: 15%;
+}
+
+.navlinks ul li {
+    list-style: none;
+    margin-bottom: 20%;
+}
+
+.navlinks ul li a {
+    color: var(--font-black);
+    text-decoration: none;
+}
+
+.navlinks ul li a:hover {
+    border-bottom: 1px solid #000;
+    padding-bottom: 3px;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    cursor: pointer;
+}

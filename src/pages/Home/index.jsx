@@ -1,20 +1,20 @@
-import styles from './index.module.css';
+import styles from "./index.module.css";
 
-import { useCurrentPage } from '../../context/currentPageContext';
+import { useCurrentPage } from "../../context/currentPageContext";
 
 export default function Home() {
-    const pageCtx = useCurrentPage();
-    pageCtx.changePage("home");
+  const pageCtx = useCurrentPage();
+  pageCtx.changePage("home");
 
-    return (
-        <>
-            <section className={styles.intro}>
+  return (
+    <div className={styles.home}>
+      <section className={styles.intro}>
 
-            </section>
+      </section>
 
-            <section className={styles.works}>
+      <section className={styles.works}>
 
-            </section>
-        </>
-    )
+      </section>
+    </div>
+  );
 }
