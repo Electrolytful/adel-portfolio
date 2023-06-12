@@ -2,7 +2,7 @@ import { createContext, useState, useContext } from "react";
 
 const CurrentPageContext = createContext({
   currentPage: "",
-  changePage: (page) => {},
+  changePageHandler: (page) => {},
 });
 
 export function CurrentPageContextProvider({ children }) {

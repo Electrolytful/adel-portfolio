@@ -6,9 +6,12 @@ import { Layout } from "./components";
 
 import { CurrentPageContextProvider } from "./context/currentPageContext";
 
+import { WorkContextProvider } from "./context/workContext";
+
 export default function App() {
   return (
-      <CurrentPageContextProvider>
+    <CurrentPageContextProvider>
+      <WorkContextProvider>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -17,6 +20,7 @@ export default function App() {
           </Route>
           <Route path="*" element={<Error />} />
         </Routes>
-      </CurrentPageContextProvider>
+      </WorkContextProvider>
+    </CurrentPageContextProvider>
   );
 }

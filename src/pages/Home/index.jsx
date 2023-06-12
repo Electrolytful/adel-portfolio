@@ -2,7 +2,7 @@ import styles from "./index.module.css";
 
 import { useCurrentPage } from "../../context/currentPageContext";
 
-import { Profile, Button } from "../../components";
+import { Profile, Button, WorkList } from "../../components";
 
 export default function Home() {
   const pageCtx = useCurrentPage();
@@ -16,8 +16,10 @@ export default function Home() {
           <Button content="View my CV" />
         </div>
       </section>
-
-      <section className={styles.works}></section>
+      <section className={styles.works}>
+        <h2>Works</h2>
+        <WorkList />
+      </section>
     </div>
   );
 }

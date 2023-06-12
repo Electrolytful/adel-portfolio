@@ -11,14 +11,14 @@ export default function Profile() {
       <h3>Aspiring Writer / Personal Trainer</h3>
       <ul className="bx-ul">
         <li>
-          <i class="bx bx-right-arrow bx-fade-left"></i> MA Creative Writing
+          <i className="bx bx-right-arrow bx-fade-left"></i> MA Creative Writing
           Student
         </li>
         <li>
-          <i class="bx bx-right-arrow bx-fade-left"></i> LLB Law Graduate
+          <i className="bx bx-right-arrow bx-fade-left"></i> LLB Law Graduate
         </li>
         <li>
-          <i class="bx bx-right-arrow bx-fade-left"></i> Personal Trainer
+          <i className="bx bx-right-arrow bx-fade-left"></i> Personal Trainer
         </li>
       </ul>
       <div className={styles.icons}>
