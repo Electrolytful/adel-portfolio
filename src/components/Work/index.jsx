@@ -1,14 +1,19 @@
-import styles from './index.module.css';
+import styles from "./index.module.css";
 
 export default function Work({ image, author, title, description, link }) {
-    return (
-        <div className={styles.work} onClick={() => window.open(`${link}`, "_blank")}>
-            <div className="image">
-                <img src={image} alt="image" />
-            </div>
-            <p>{author}</p>
-            <h3>{title}</h3>
-            <p>{description}</p>
+  return (
+    <div
+      className={styles.work}
+      onClick={() => window.open(`${link}`, "_blank")}
+    >
+      <img src={image} alt="cover image" />
+      <div className={styles.content}>
+        <h2>{title}</h2>
+        <h3>{author}</h3>
+        <div>
+          <p>{description}</p>
         </div>
-    )
+      </div>
+    </div>
+  );
 }

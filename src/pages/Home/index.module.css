@@ -16,4 +16,35 @@
 .works {
     width: 100%;
     min-height: 100vh;
+    font-family: var(--font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 100px;
+}
+
+.headingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.heading {
+    border-bottom: 1px solid #000;
+    width: 500px;
+}
+
+.works h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.symbol {
+    font-size: var(--large-font);
 }

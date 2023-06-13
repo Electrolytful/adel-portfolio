@@ -8,9 +8,9 @@ export default function WorkList() {
     const workCtx = useWorks();
 
     return (
-        <ul>
+        <ul className={styles.list}>
             {workCtx.works.map((work) => {
-                return <li><Work key={work.id} title={work.title} author={work.author} description={work.description} image={work.image} link={work.link} /></li>
+                return <li key={work.id}><Work title={work.title} author={work.author} description={work.description} image={work.image} link={work.link} /></li>
             })}
         </ul>
     );

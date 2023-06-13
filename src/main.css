@@ -5,6 +5,10 @@
     scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 #home {
     background-color: var(--grey);
 }

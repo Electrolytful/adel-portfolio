@@ -1,5 +1,5 @@
 /* gloabl css variables */
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Space+Grotesk&display=swap');
 
 :root {
     /* colors */
@@ -10,6 +10,7 @@
 
     /* fonts */
     --font: 'Space Grotesk', sans-serif;
+    --work-font: 'Roboto Condensed', sans-serif;
 
     /* font sizes */
     --small-font: 1rem;
