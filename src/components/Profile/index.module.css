@@ -4,7 +4,7 @@
     font-family: var(--font);
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 2rem;
     width: max-content;
 }
 
@@ -31,7 +31,7 @@
 .icons {
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 1.5rem;
 }
 
 .icons > * {

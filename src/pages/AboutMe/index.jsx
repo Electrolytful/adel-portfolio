@@ -20,7 +20,7 @@ export default function AboutMe() {
             <h2>Graduate Writer</h2>
           </div>
           <p>
-            So, what about me? I am a Law graduate and I am currently studying
+            <em>So, what about me?</em> I am a Law graduate and I am currently studying
             an MA in Creative Writing whilst working as a Personal Trainer in
             London. Previously, I have worked as a teaching assistant and a
             study support assistant within a specialist SEN provision.
@@ -40,8 +40,8 @@ export default function AboutMe() {
           <p>
             Currently, I am finishing my MA degree, mainly focusing on my
             dissertation, which is the final assessment. This will be the first
-            three chapters of my - long in the making - novel titled, The
-            Search; an apocalyptic dystopian novel, following three characters
+            three chapters of my - long in the making - novel titled, <strong><em>The
+            Search;</em></strong> an apocalyptic dystopian novel, following three characters
             as they each search for something amidst the ruins of a dying city.
             Revenge, Redemption and a Reason to Live.
           </p>
@@ -53,7 +53,9 @@ export default function AboutMe() {
         </div>
       </section>
 
-      <section className={styles.history}></section>
+      <section className={styles.history}>
+
+      </section>
     </>
   );
 }
